@@ -5,8 +5,6 @@ class Header extends React.Component {
         super(props);
 
         setInterval(() => {
-            this.props.handleChange({target: {value: "xxxxxx"}});
-            this.props.addThing("--------");
         }, 
     3000);
     }    
@@ -35,6 +33,8 @@ class Header extends React.Component {
         console.log("header: shouldComponentUpdate");
         return true;
     }
+
+    
 
     render() {
 

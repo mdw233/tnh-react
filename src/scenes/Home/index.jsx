@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
+import {createStore} from 'redux';
 
-import Header from '../../components/Header'
+import Header from '../../components/Header';
+import tnhApp from '../../services/fun/fun.reducer';
+import { haveFun } from '../../services/fun/fun.actions';
+
+let store = createStore(tnhApp);
+console.log('created store', store);
 
 class Home extends React.Component {
 
@@ -10,6 +16,9 @@ class Home extends React.Component {
             junk: "",
             things: ["a", "b"]
         };
+
+        store.subscribe(() => {
+        });
     }
 
     handleChange(e) {
@@ -17,6 +26,7 @@ class Home extends React.Component {
         console.log(this);
         this.setState({junk: e.target.value});
         this.addThing(e.target.value);
+        store.dispatch(haveFun(3));
     }
 
     addThing(thing) {
