@@ -10,7 +10,7 @@ class Header extends React.Component {
 
         return (
             <div>
-                <h1>header</h1>
+                <h1>Tweets Near Here</h1>
             </div>
         );
     }
