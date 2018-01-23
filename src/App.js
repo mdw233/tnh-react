@@ -3,11 +3,15 @@ import logo from './logo.svg';
 
 import './App.css';
 import Home from './scenes/Home'
+import ContainerComponent from './components/ReduxFun/ReduxFun.container.component';
 
 class App extends Component {
   render() {
     return (
-      <Home />
+      <div>
+        <Home />
+        <ContainerComponent />
+      </div>
     );
   }
 }

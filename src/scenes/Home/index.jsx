@@ -14,10 +14,12 @@ class Home extends React.Component {
         super(props);
         this.state = {
             junk: "",
-            things: ["a", "b"]
+            things: ["a", "b"],
+            funHad: 0
         };
 
         store.subscribe(() => {
+            this.setState({funHad: store.getState().funHad})
         });
     }
 
@@ -48,6 +50,7 @@ class Home extends React.Component {
                 <div>This is home</div>
                 <input type="text" onChange={(e) => this.handleChange(e)} />
                 <div>{this.state.junk}</div>
+                <div>{this.state.funHad}</div>
             </div>
         );
     }
