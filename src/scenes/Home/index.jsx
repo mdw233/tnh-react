@@ -21,6 +21,12 @@ class Home extends React.Component {
                 <Header />
                 <p>Home page let's do things</p>
                 <TweetComponent />
+
+                <a className="button is-primary">
+                    Button
+                </a>
+                <hr />
+                <i className="fa fa-camera-retro"></i>
             </div>
         );
     }
