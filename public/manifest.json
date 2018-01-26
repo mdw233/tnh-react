@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Tweets Near Here",
+  "name": "Search for Tweets Nearby",
   "icons": [
     {
       "src": "favicon.ico",

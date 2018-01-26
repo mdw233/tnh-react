@@ -1,9 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Poppins';
 }
 
 h1 {
-  font-family: 'Signika'
+  font-family: 'Signika';
+  font-size: 40px;
+}
+
+.primary-border-color {
+  border-color: black;
 }
