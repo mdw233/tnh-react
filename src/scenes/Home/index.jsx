@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {createStore} from 'redux';
 
 import Header from '../../components/Header';
+import SearchForm from '../../components/Search/search.component'
 import tnhApp from '../../services/fun/fun.reducer';
 import { haveFun } from '../../services/fun/fun.actions';
 import Tweet from '../../components/Tweet/tweet.component';
@@ -19,6 +20,7 @@ class Home extends React.Component {
         return (
             <div>
                 <Header />
+                <SearchForm />
                 <Tweet 
                     displayName="Matt Gajtka"
                     userName="MattGajtka"
