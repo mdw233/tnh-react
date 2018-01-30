@@ -16,6 +16,7 @@ const avatar = {
     'height': '48px',
     'width': '48px',
     'border-radius': '50%',
+    
 }
 
 const Tweet = ({displayName, userName, avatarSrc, content, place, when, tweetId}) => {
