@@ -1,11 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
 
+import logo from './logo.svg';
 import './App.css';
 import Home from './scenes/Home'
 import ContainerComponent from './components/ReduxFun/ReduxFun.container.component';
 
-class App extends Component {
+export const AppRouter = () => (
+  <Router>
+    <div>
+      <Route exact path="/" component={App}/>
+      <Route path="/about" component={About}/>
+    </div>
+  </Router>
+)
+
+export class App extends Component {
   render() {
     return (
       <div>
@@ -15,4 +29,9 @@ class App extends Component {
   }
 }
 
-export default App;
+const About = () => (
+  <div>
+    <h2>About</h2>
+  </div>
+)
+

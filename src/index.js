@@ -7,7 +7,7 @@ import 'bulma/css/bulma.css';
 import 'font-awesome/css/font-awesome.css'
 import tnhApp from './services/fun/fun.reducer';
 import './index.css';
-import App from './App';
+import {App, AppRouter} from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 let store = createStore(tnhApp);
@@ -15,7 +15,7 @@ let store = createStore(tnhApp);
 //ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(
     <Provider store={store}>
-        <App />
+        <AppRouter />
     </Provider>, 
     document.getElementById('root'));
 registerServiceWorker();

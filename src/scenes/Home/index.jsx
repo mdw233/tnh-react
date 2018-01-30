@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {createStore} from 'redux';
+import {Link} from 'react-router-dom';
 
 import Header from '../../components/Header';
 import SearchForm from '../../components/Search/search.component'
@@ -20,6 +21,7 @@ class Home extends React.Component {
         return (
             <div>
                 <Header />
+                <Link to="/About">About</Link>
                 <SearchForm />
                 <Tweet 
                     displayName="Matt Gajtka"
