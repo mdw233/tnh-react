@@ -9,7 +9,7 @@ import { haveFun } from '../../services/fun/fun.actions';
 import Tweet from '../../components/Tweet/tweet.component';
 
 let store = createStore(tnhApp);
-console.log('created store', store);
+console.log('created stores', store);
 
 class Home extends React.Component {
 
