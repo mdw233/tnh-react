@@ -9,12 +9,16 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './scenes/Home'
 import ContainerComponent from './components/ReduxFun/ReduxFun.container.component';
+import Header from './components/Header/index';
 
 export const AppRouter = () => (
   <Router>
     <div>
-      <Route exact path="/" component={App}/>
-      <Route path="/about" component={About}/>
+      <Header />
+      <div className="container">
+        <Route exact path="/" component={App}/>
+        <Route path="/about" component={About}/>
+      </div>
     </div>
   </Router>
 )

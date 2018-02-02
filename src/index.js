@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
-import 'bulma/css/bulma.css';
-import 'font-awesome/css/font-awesome.css'
+import 'bootstrap/dist/css/bootstrap.css';
 import tnhApp from './services/fun/fun.reducer';
 import './index.css';
 import {App, AppRouter} from './App';
@@ -12,7 +11,6 @@ import registerServiceWorker from './registerServiceWorker';
 
 let store = createStore(tnhApp);
 
-//ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(
     <Provider store={store}>
         <AppRouter />

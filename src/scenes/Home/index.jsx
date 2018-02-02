@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import {createStore} from 'redux';
 import {Link} from 'react-router-dom';
 
+import { haveFun } from '../../services/fun/fun.actions';
 import Header from '../../components/Header';
+import Location from '../../components/Location/location.component';
 import SearchForm from '../../components/Search/search.component'
 import tnhApp from '../../services/fun/fun.reducer';
-import { haveFun } from '../../services/fun/fun.actions';
 import Tweet from '../../components/Tweet/tweet.component';
 
 let store = createStore(tnhApp);
@@ -20,8 +21,7 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                <Header />
-                <Link to="/About">About</Link>
+                <Location />
                 <SearchForm />
                 <Tweet 
                     displayName="Matt Gajtka"

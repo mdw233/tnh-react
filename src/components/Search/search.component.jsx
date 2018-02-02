@@ -29,8 +29,8 @@ class SearchForm extends React.Component {
             <form onSubmit={this.handleSubmit}>
                 <input 
                     placeholder="Search for nearby tweets ..."
-                    className="input" 
                     type="text" 
+                    className="form-control"
                     value={this.state.searchText} 
                     onChange={this.handleChange} />
                 <input type="submit" value="Submit" style={submitStyle}/>

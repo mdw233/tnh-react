@@ -4,18 +4,24 @@ import TweetHeader from './components/tweet-header.component';
 
 
 const tweetContainer = {
-    'border-width': '1px',
-    'border-style': 'solid',
+    'backgroundColor': 'white',
+    'borderRadius': '8px',
+    'borderStyle': 'solid',
     'display': 'grid',
-    'grid-template-columns': '100px 1fr 40px',
-    'grid-template-rows': '100%',
-    'padding': '10px'
+    'gridTemplateColumns': '100px 1fr 40px',
+    'gridRemplateRows': '100%',
+    'padding': '10px',
+    'margin': '10px 0px'
+}
+
+const tweetContent = {
+    'color': 'red'
 }
 
 const avatar = {
     'height': '48px',
     'width': '48px',
-    'border-radius': '50%',
+    'borderRadius': '50%',
     
 }
 
@@ -25,14 +31,13 @@ const Tweet = ({displayName, userName, avatarSrc, content, place, when, tweetId}
         <div>
             <img style={avatar} src={avatarSrc} />
         </div>
-        <div>
+        <div className="primary-text-color">
             <div>
-                {displayName} 
+                {displayName} @{userName}
             </div>
             <div>
                 {place} : {when}
             </div>
-            <div>@{userName}</div>
             <div>{content}</div>
         </div>
         <div>
