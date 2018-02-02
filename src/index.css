@@ -3,20 +3,26 @@ body {
   height: 100vh;
   padding: 0;
   font-family: 'Poppins';
+  color: #2C3230;
 }
 
 .primary-background {
   background-color: white;
 }
 .primary-text-color {
-  color: black;
+  color: #2C3230;
 }
-
 .primary-border-color {
-  border-color: #005F6B;
+  border-color: #BC0100;
+}
+.primary-background-color {
+  background-color: #BC0100;
 }
 .secondary-text-color {
   color: black;
+}
+.secondary-border-color {
+  border-color: #D9DADE;
 }
 
 h1 {

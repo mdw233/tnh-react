@@ -22,6 +22,14 @@ class SearchForm extends React.Component {
     handleSubmit(event) {
         console.log('search was submitted', this.state.searchText);
         event.preventDefault();
+
+        fetch("http://api.tweets-near-here.com/tweet/search?q=d&geocode=3")
+            .then(res => res.json())
+            .then(
+                (result) => {
+                    console.log('result', result);
+                }
+            )
     }
 
     render () {

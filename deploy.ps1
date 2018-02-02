@@ -1,4 +1,4 @@
 
 npm run build
 
-aws s3 cp build s3://tnh-react --recursive --acl=public-reada
+aws s3 cp build s3://tweets-near-here.com --recursive --acl=public-read

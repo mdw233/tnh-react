@@ -27,7 +27,7 @@ const avatar = {
 
 const Tweet = ({displayName, userName, avatarSrc, content, place, when, tweetId}) => {
     return (
-    <div style={tweetContainer} className="primary-border-color">
+    <div style={tweetContainer} className="secondary-border-color">
         <div>
             <img style={avatar} src={avatarSrc} />
         </div>

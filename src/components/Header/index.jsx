@@ -19,6 +19,12 @@ const borderContainerStyle = {
     'borderBottom' : '1px solid rgba(0,0,0,0.25)'
 };
 
+const hr = {
+    'height': '4px',
+    'border': 'none',
+    'backgroundColor': '#BC0100'
+}
+
 class Header extends React.Component {
     constructor(props) {
         super(props);
@@ -27,11 +33,16 @@ class Header extends React.Component {
     render() {
 
         return (
+            <div>
             <Navbar>
                 <Container>
                     <NavbarBrand><h1>Tweets Near Here</h1></NavbarBrand>
                 </Container>
             </Navbar>
+
+            <hr className="primary-border-color" style={hr} />
+
+            </div>
         );
     }
 }
